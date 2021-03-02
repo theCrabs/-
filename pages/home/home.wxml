@@ -1,0 +1,18 @@
+<!--pages/home/home.wxml-->
+<!-- 轮播图展示 -->
+<x-swiper list="{{banners}}" />
+
+<!-- 推荐数据 -->
+<x-recommend recommends="{{recommends}}" bind:imageload="handleImageLoad" ></x-recommend>
+
+<!-- tab-control -->
+<tabtest titles="{{titles}}"
+          bind:itemclick="handleTabClick"
+          class="{{isFixed ? 'fixed' : ''}}" id="tab-control"></tabtest> 
+<tabtest titles="{{titles}}" wx:if="{{isFixed}}"></tabtest>
+
+<!-- 商品数据展示 -->
+<goods goods="{{goods[currentType].list}}"></goods>
+
+<!-- 返回顶部按钮 -->
+<back-top wx:if="{{showBackTop}}"></back-top>

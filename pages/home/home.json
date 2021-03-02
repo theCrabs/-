@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "x-swiper":"../../components/x-swiper/x-swiper",
+    "tabtest":"../../components/tabtest/tabtest",
+    "goods":"../../components/goods/goods",
+    "back-top":"../../components/back-top/back-top",
+
+
+    "x-recommend":"./childCpn/x-recommend/x-recommend"
+
+  },
+  "navigationBarTitleText": "购物街"
+}

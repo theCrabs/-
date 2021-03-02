@@ -1,0 +1,18 @@
+.content{
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx; 
+  background-color: #fff;
+}
+.tabitem{
+  flex: 1;
+  text-align: center;
+}
+.active{
+  color: hotpink;
+}
+
+.active text{
+  padding: 20rpx 20rpx;
+  border-bottom: 6rpx solid hotpink;
+}
